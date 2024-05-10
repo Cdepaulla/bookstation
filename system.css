@@ -38,7 +38,7 @@ body {
 
 .cabecalho div p:hover {
     text-decoration: underline;
-    
+
 }
 
 .cabecalho button {
@@ -165,17 +165,47 @@ main aside a:hover {
     margin-right: 109px;
 }
 
-.livros{
+.livros {
     background: rgba(137, 131, 83, 0.3);
     border-radius: 10px;
     display: flex;
     margin: 52px 125px;
     width: 864px;
-    height: 150px;
     gap: 10px;
     text-align: center;
+    flex-direction: column;
+
 }
-.livrosinfo{
+.header {
+    display: flex;
+}
+
+.desc {
+    text-align: left;
+    font-size: 16px;
+    height: 228px;
+    display: none;
+    flex-direction: column;
+}
+.livros .botao_abrir {
+    background: url("/assets/fechado.png") ;
+    background-repeat: no-repeat  !important;
+    background-position: center !important;
+    width: 78px;
+    height: 84px;
+    margin: 33px;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+.button_editar {
+   background: url(/assets/butEditar.png);
+   height: 38px;
+   width: 38px;
+}
+
+.livrosinfo {
     padding: 33px;
     width: 100%;
     display: flex;
@@ -185,20 +215,21 @@ main aside a:hover {
     font-family: "Inika", serif;
 }
 
-.livrosinfo p:nth-child(2){
+.livrosinfo p:nth-child(2) {
     border-left: 1px solid black;
     margin-left: 52px;
     padding-left: 51px;
 }
 
-.livros button{
-    background: url("/assets/divisa-esquerda\ 1.png") no-repeat;
-    width: 48px;
-    height: 84px;
-    margin: 33px;
+
+.paragrafo {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 16px;
 }
 
-   
+.desc h4{
+
+    padding-bottom: 10px;
+    font-weight: 400;
+}
