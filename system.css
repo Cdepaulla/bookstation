@@ -206,33 +206,63 @@ main aside a:hover {
 }
 
 .livrosinfo {
-    padding: 33px;
-    width: 100%;
-    display: flex;
-    height: min-content;
-    font-size: 16px;
-    font-weight: 700;
-    font-family: "Inika", serif;
-}
-
-.livrosinfo p:nth-child(2) {
-    border-left: 1px solid black;
-    margin-left: 52px;
-    padding-left: 51px;
+ display: flex;
+ justify-content: space-between;
+ gap: 90%;
 }
 
 
 .paragrafo {
+    margin: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.sinopse{
+    margin: 10px;
+}
 
 .desc h4{
-
     padding-bottom: 10px;
     font-weight: 400;
 }
+.emprestinfo{
+padding-block: 17px 16px;
+display: flex;
+text-align: left;
+align-items: center;
+font-size: 16px;
+font-weight: 400;
+font-family: "Inika", serif;
+margin-left: 10px;
+padding-left: 51px;
+justify-content: space-between;
+width: 100%;
+}
+
+.emprestinfo h1{
+    font-weight: 400;
+}
+
+.emprestinfo{
+   margin: 0;
+}
+
+.titulo_emprestimo *{
+    margin-bottom: 12px;
+}
+
+.titulo_emprestimo div p{
+    display: inline;
+    margin-right: 24px;
+}
+.emprestinfo_status {
+  /* padding-top: 14px;  */
+}
+.emprestinfo_status p:first-child{
+    margin-bottom: 10px;
+}
+
 .form_exemplar_buscar{
     background: #fdfcfb url("/assets/lupa.png") right no-repeat;
     cursor: pointer;
@@ -337,7 +367,11 @@ main aside a:hover {
     background-color: #B4CCBC; /* Cor de fundo do botão de cancelar */
     color: #fff; /* Cor do texto do botão de cancelar */
 }
-.nome_completo input{
+
+input{
+    background: none;
+}
+ .nome_completo input{
     background: rgb(252, 244, 237);
     cursor: pointer;
     background-position-y: 6px;
@@ -349,7 +383,7 @@ main aside a:hover {
     padding: 20px;
     font-size: 16px;
     display: flex;
-    margin-top: 55px;
+    margin-top: 55px; 
 }
 .Pessoa_fisica{
     text-align: center;
@@ -379,25 +413,65 @@ main aside a:hover {
     display: flex;
     margin-top: 35px;
 }
-.endereco_informacoes input{
+
+.endereco_informacoes input {
     padding: 5px;
-    background:rgb(252, 244, 237);
+    background: rgb(252, 244, 237);
     border-radius: 12px;
-    width: 390px;
+    width: 250px;
     height: 48px;
     margin-top: 40px;
-    margin-inline: 0px;
+    margin-inline: 85px;
     display: inline-block;
-    vertical-align: middle; /* Alinha os inputs verticalmente*/
+    margin-right: 35px; /*Adicionando margem à direita*/
 }
-.endereco_informacoes_cidade{
+  
+
+
+.endereco_informacoes_cidade input{
     padding: 5px;
     background:rgb(252, 244, 237);
     border-radius: 12px;
-    width: 390px;
+    width: 300px;
     height: 48px;
     margin-top: 40px;
     margin-inline: 40px;
     display: inline-block;
     vertical-align: middle; /* Alinha os inputs verticalmente */
+}
+.endereco_informacoes .numero_informaçao{
+    width:181px;
+    height:48px;  
+}
+
+.desc.emprestimo{
+   flex-direction: row;
+   align-items: center;
+   height: 100px;
+   justify-content:space-around;
+   
+}
+.btn_emprestimos{
+    border-radius: 10px;
+    background: none;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 12px;
+    width: 190px;
+    height: 50px;
+    display: inline-block;
+
+}
+.btn_emprestimos.multa{
+    border: #366171 2px solid;
+    color: #366171;
+
+}
+.btn_emprestimos.renovar{
+    border: #713636 2px solid;
+    color: #713636;
+}
+.btn_emprestimos.devolver{
+    border: #366171 2px solid;
+    color: #366171;
 }

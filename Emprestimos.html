@@ -14,7 +14,7 @@
         <div class="modal">
             <p>Deseja sair?</p>
             <span>
-                 <button class="botaoResposta">Sim</button>
+                <button class="botaoResposta">Sim</button>
                 <button class="botaoResposta">Não</button>
             </span>
         </div>
@@ -31,38 +31,42 @@
         <main>
             <section class="apresentacao_conteudo">
                 <form action="#" method="post">
-                    <input class="form" type="text" placeholder="Buscar livros" required>
+                    <input class="form_exemplar_buscar" type="text" placeholder="Buscar empréstimo" required>
                 </form>
                 <div class="livros">
-                    <div class="header">
-                    <img src="/assets/Harry potter.png">
-                <div class="livrosinfo">
-                    <P>Harry Potter e a Pedra Filosofal Fantasia</P>
-                    <p>Status</p>
-                </div>
-                    <button  class="botao_abrir"></button>
-                </div>
-                    <div class="desc">
-                        <div class="paragrafo">
-                            <p>Lançamento: 14/05/1678</p>
-                            <p>ISBN-10: 0000000000</p>
-                            <p>ISBN-13: 000000000000</p>
-                            <button class="button_editar"></button>
+                    <div>
+                        <div class="header">
+                            <img src="/assets/Harry potter.png">
+
+                            <div class="emprestinfo">
+                                <div class="titulo_emprestimo">
+                                    <h1>Empréstimo 000001</h1>
+                                    <p>Nome completo leitor</p>
+                                    <p>Harry Potter e a pedra Filosofal</p>
+                                    <div>
+                                        <p>ISBN-10: 000000000000</p>
+                                        <p>ISBN-13: 000000000000</p>
+                                    </div>
+                                </div>
+                                <div class="emprestinfo_status">
+                                    <p>Status: Emprestado</p>
+                                    <p>Entrega em: 30 dias</p>
+                                </div>
+                            </div>
+                            <button class="botao_abrir"></button>
                         </div>
-                        <div>
-                            <h4>Sinopse:</h4>
-                            <p>
-                                Depois de férias aborrecidas na casa dos tios trouxas, está na hora de Harry Potter voltar a estudar. Coisas acontecem, no entanto, para dificultar o regresso de Harry. Persistente e astuto, o herói não se deixa intimidar pelos obstáculos e, com a ajuda dos fiéis amigos Weasley, começa o ano letivo na Escola de Magia e Bruxaria de Hogwarts. As novidades não são poucas. Novos colegas, novos professores, muitas e boas descobertas e um grande e perigosos desafio. Alguém ou alguma coisa ameaça a segurança e a tranquilidade dos membros de Hogwarts.
-                            </p>
+                        <div class="desc emprestimo">
+                            <button class="btn_emprestimos multa">Gerar Multa</button>
+                            <button class="btn_emprestimos renovar">Renovar empréstimo</button>
+                            <button class="btn_emprestimos devolver">Devolver</button>
                         </div>
                     </div>
-                </div>
             </section>
-        <aside>
+            <aside>
                 <a href="/biblioteca.html">Biblioteca</a>
                 <a href="/exemplar.html">Exemplar</a>
                 <a href="/leitor.html">Leitor</a>
-                <a href="/Emprestimos.html"class="active_link">Empréstimos</a>
+                <a href="/Emprestimos.html" class="active_link">Empréstimos</a>
             </aside>
         </main>
         <script src="main.js"></script>

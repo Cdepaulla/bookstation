@@ -4,6 +4,7 @@ const btnSim = document.querySelectorAll(".botaoResposta")[0]
 const btnNao = document.querySelectorAll(".botaoResposta")[1]
 const botaoAbrir = document.querySelector(".botao_abrir")
 const botaoparagrafo = document.querySelector(".desc")
+const abrirbotoes = document.querySelector(".desc_botao")
 // const logar = document
 
 
@@ -61,6 +62,7 @@ function abrirdesc() {
         // botaoAbrir.style.backgroundRepeat = 'no-repeat'
     }
 }
+
 
 // function getCep(cep) {
 //     fetch(`https://viacep.com.br/ws/${cep}/json/`)
