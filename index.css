@@ -1,116 +1,116 @@
 body{
-  background-color:#eddac9;
-  font-family: "Inika", serif;
-  
-  
+background-color:#eddac9;
+font-family: "Inika", serif;
+
+
+}
+h1{
+    text-transform: uppercase;
+    color:#68241B;
+    margin-top: 10%;
+    font-size: 96px;
+    font-weight: 400;
+}
+.apresentacao_conteudo{
+    text-align: center;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.formulário_book{
+    display: flex;
+    flex-direction:column;
+    gap: 33px;
+}
+.form {
+   
+    background-color:#fcf0da;
+    border-radius: 10px;
+    border-bottom: #000000 1px solid;
+    width: 531px;
+    height: 53px;
+    margin-inline: auto;
+    padding-block: 18px 9px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+::placeholder {
+    color:rgba(54, 97, 113, 0.68)
   }
-  h1{
-      text-transform: uppercase;
-      color:#68241B;
-      margin-top: 10%;
-      font-size: 96px;
-      font-weight: 400;
+
+  #container{
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+    
   }
-  .apresentacao_conteudo{
-      text-align: center;
-      margin:0 auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      
+
+  *{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
   }
-  
-  .formulário_book{
-      display: flex;
-      flex-direction:column;
-      gap: 33px;
+
+  .requisicao_form{
+    margin-top: 24px;
+
   }
-  .form {
-     
-      background-color:#fcf0da;
-      border-radius: 10px;
-      border-bottom: #000000 1px solid;
-      width: 531px;
-      height: 53px;
-      margin-inline: auto;
-      padding-block: 18px 9px;
-      text-align: center;
-      font-size: 20px;
+
+  .requisicao_form a{
+    color:#68241B;
+    font-weight: 700;
+    margin-right: 50px;
+
   }
-  
-  
-  ::placeholder {
-      color:rgba(54, 97, 113, 0.68)
-    }
-  
-    #container{
-      display: flex;
-      min-height: 100vh;
-      overflow: hidden;
-      
-    }
-  
-    *{
-      margin: 0;
-      padding: 0;
-      outline: none;
-      border: none;
-      text-decoration: none;
-      box-sizing: border-box;
-    }
-  
-    .requisicao_form{
-      margin-top: 24px;
-  
-    }
-  
-    .requisicao_form a{
-      color:#68241B;
-      font-weight: 700;
-      margin-right: 50px;
-  
-    }
-  
-    .requisicao_form input[type="submit"]{
-      width: 250px;
-      height: 60px;
-      background: url('/assets/marcador.png') no-repeat ;
-      font-size: 20px;
-      font-family: "Inika", serif;
-      color: #ffff;
-      text-transform: uppercase;
-      cursor: pointer;
-      
-    }
-  .navegacao_img{
-      background: url("/assets/Group 4.jpg");
-      width: 461px;
+
+  .requisicao_form input[type="submit"]{
+    width: 250px;
+    height: 60px;
+    background: url('/assets/marcador.png') no-repeat ;
+    font-size: 20px;
+    font-family: "Inika", serif;
+    color: #ffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    
   }
-  .button_container a{
-  width: 166px;
-  height: 167px;
-  text-transform: uppercase;
-  color: #fff;
-  background: none;
-  letter-spacing: 2px;
-  line-height: 167px;
-  text-align: center;
-  
-  }
-  
-  .button_container{
-      display: flex;
-      flex-direction: column;
-      align-items: end;
-      margin-top: 91px;
-  }
-  
-   a.active_link-res{
-      background: pink;
-      color: aqua;
-  }
-   a.active_link{
-      background: rgb(9, 216, 216);
-      color:#000000;
-      background:url("/assets/Rectangle\ 17.png");
-  }
+.navegacao_img{
+    background: url("/assets/Group 4.jpg");
+    width: 461px;
+}
+.button_container a{
+width: 166px;
+height: 167px;
+text-transform: uppercase;
+color: #fff;
+background: none;
+letter-spacing: 2px;
+line-height: 167px;
+text-align: center;
+
+}
+
+.button_container{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 91px;
+}
+
+ a.active_link-res{
+    background: pink;
+    color: aqua;
+}
+ a.active_link{
+    background: rgb(9, 216, 216);
+    color:#000000;
+    background:url("/assets/Rectangle\ 17.png");
+}
