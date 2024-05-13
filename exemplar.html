@@ -33,17 +33,38 @@
 
             <section class="apresentacao_conteudo">
                 <form action="#" method="post">
-                    <input class="form" type="text" placeholder="Buscar livros" required>
+                    <input class="form_exemplar_buscar" type="text" placeholder="Buscar ISBN" required>
                 </form>
-                <div class="livros">
-                    <img src="/assets/Harry potter.png">
-                <div class="livrosinfo">
-                    <P>Harry Potter e a Pedra Filosofal Fantasia</P>
-                    <p>Status</p>
-                </div>
-                    <button></button>
-                </div>
-                
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <fieldset>
+                    <div class="formulario_exemplar">
+                        <div class="titulo">
+                            <input type="text" placeholder="Título:" id="titulo" name="titulo" required>
+                        </div>
+                        <div class="autor_lancamento">
+                            <input type="text" placeholder="autor" id="autor" name="autor" required>    
+                            <input type="text"placeholder="Lançamento:" id="lancamento" name="lancamento" required>
+                        </div>
+                        <div class="Editora_genero">
+                            <input type="text"placeholder=Editora: id="editora" name="editora" required>
+                            <input type="text"placeholder="Gênero" id="genero" name="genero">
+                     <!-- </div>
+                         <div class="upload_imagem">
+                            <form action="/upload" method="post" enctype="multipart/form-data">
+                            <input type="file" id="imagem" name="imagem"><br>
+                            <input type="submit" value="Enviar">
+                        </form>
+                    </div> -->
+                        <div class="isbn_classe">
+                            <input type="text"placeholder="ISBN-10:" id="isbn10" name="isbn10" required>
+                            <input type="text"placeholder="ISBN-13:" id="isbn13" name="isbn13" required>
+                        </div>
+                    <div class="Button_finalizacao">
+                        <button type="submit">Cadastrar</button>
+                        <button type="button" onclick="cancelar()">Cancelar</button>
+                    </div>
+                </form>
+            </fieldset>
             </section>
             <aside>
                 <a href="/biblioteca.html">Biblioteca</a>
