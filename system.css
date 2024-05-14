@@ -279,7 +279,13 @@ width: 100%;
     flex-direction: column;
     margin-top: 55px;
 }
-/* .formulario_exemplar input{} */
+.formulario_exemplar {
+    border: #366171 2px solid;
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
 
 .titulo input{
     background: rgb(252, 244, 237);
@@ -287,7 +293,7 @@ width: 100%;
     background-position-y: 6px;
     background-position-x: 99.5%;
     border-radius: 12px;
-    width: 860px;
+    width: 100%;
     height: 48px;
     margin-inline: auto;
     padding: 20px;
@@ -377,7 +383,7 @@ input{
     background-position-y: 6px;
     background-position-x: 99.5%;
     border-radius: 12px;
-    width: 860px;
+    width: 100%;
     height: 48px;
     margin-inline: auto;
     padding: 20px;
@@ -387,17 +393,17 @@ input{
 }
 .Pessoa_fisica{
     text-align: center;
+    display:flex;
 }
 .Pessoa_fisica  input{
-    padding: 5px;
+    padding: 20px;
     background:rgb(252, 244, 237);
     border-radius: 12px;
-    width: 390px;
-    height: 48px;
+    width: 40%;
+    height: 100%;
     margin-top: 40px;
     margin-inline: 40px;
-    display: inline-block;
-    vertical-align: middle; /* Alinha os inputs verticalmente */
+    
 }
 .Email_form input{
     background: rgb(252, 244, 237);
@@ -405,7 +411,7 @@ input{
     background-position-y: 6px;
     background-position-x: 99.5%;
     border-radius: 12px;
-    width: 860px;
+    width: 100%;
     height: 48px;
     margin-inline: auto;
     padding: 20px;
@@ -415,15 +421,14 @@ input{
 }
 
 .endereco_informacoes input {
-    padding: 5px;
+    padding: 20px;
     background: rgb(252, 244, 237);
     border-radius: 12px;
-    width: 250px;
-    height: 48px;
+    width: 50%;
+    height: 50%;
     margin-top: 40px;
     margin-inline: 85px;
     display: inline-block;
-    margin-right: 35px; /*Adicionando margem à direita*/
 }
   
 
@@ -432,16 +437,11 @@ input{
     padding: 5px;
     background:rgb(252, 244, 237);
     border-radius: 12px;
-    width: 300px;
-    height: 48px;
+    width: 50%;
+    height: 50%;
     margin-top: 40px;
-    margin-inline: 40px;
     display: inline-block;
     vertical-align: middle; /* Alinha os inputs verticalmente */
-}
-.endereco_informacoes .numero_informaçao{
-    width:181px;
-    height:48px;  
 }
 
 .desc.emprestimo{
