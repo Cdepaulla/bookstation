@@ -280,7 +280,6 @@ width: 100%;
     margin-top: 55px;
 }
 .formulario_exemplar {
-    border: #366171 2px solid;
     width: 750px;
     display: flex;
     flex-direction: column;
@@ -394,15 +393,16 @@ input{
 .Pessoa_fisica{
     text-align: center;
     display:flex;
+    justify-content: space-between;
 }
 .Pessoa_fisica  input{
     padding: 20px;
     background:rgb(252, 244, 237);
     border-radius: 12px;
-    width: 40%;
-    height: 100%;
+    width: 45%;
     margin-top: 40px;
-    margin-inline: 40px;
+    display: inline-block;
+    vertical-align: middle;
     
 }
 .Email_form input{
@@ -419,38 +419,44 @@ input{
     display: flex;
     margin-top: 35px;
 }
+.endereco_informacoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 .endereco_informacoes input {
     padding: 20px;
     background: rgb(252, 244, 237);
     border-radius: 12px;
-    width: 50%;
-    height: 50%;
+    width: 25%;
     margin-top: 40px;
-    margin-inline: 85px;
     display: inline-block;
 }
-  
-
-
+  .endereco_informacoes_cidade{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 .endereco_informacoes_cidade input{
-    padding: 5px;
+    padding: 20px;
     background:rgb(252, 244, 237);
     border-radius: 12px;
-    width: 50%;
-    height: 50%;
+    width: 45%;
     margin-top: 40px;
     display: inline-block;
     vertical-align: middle; /* Alinha os inputs verticalmente */
 }
 
-.desc.emprestimo{
+/*Abaixo são estilizações da pagina empréstimo*/
+
+ .desc.emprestimo{
    flex-direction: row;
    align-items: center;
    height: 100px;
-   justify-content:space-around;
-   
+   justify-content:space-around;   
 }
+
 .btn_emprestimos{
     border-radius: 10px;
     background: none;
