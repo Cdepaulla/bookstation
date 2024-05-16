@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/system.css">
     <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
+
     <title>Bookstation</title>
 </head>
 
@@ -41,21 +42,25 @@
                         <div class="titulo">
                             <input type="text" placeholder="Título:" id="titulo" name="titulo" required>
                         </div>
-                        <div class="autor_lancamento">
+                        <div class="InputFlex">
                             <input type="text" placeholder="Autor:" id="autor" name="autor" required>    
                             <input type="text"placeholder="Lançamento:" id="lancamento" name="lancamento" required>
                         </div>
                         
-                        <div class="Editora_genero">
+                        <div class="InputFlex">
                             <input type="text"placeholder=Editora: id="editora" name="editora" required>
                             <input type="text"placeholder="Gênero" id="genero" name="genero">
-                     </div>
-                         <div class="upload_imagem">
-                            <form action="/upload" method="post" enctype="multipart/form-data">
-                            <input type="file" id="imagem" name="imagem">
-                        </form>
-                    </div>
-                        <div class="isbn_classe">
+                        </div>
+                        
+                         <div class="InputFlex">
+                                <img src="./assets/Rectangle 13.jpg" style="border-radius: 10px;">
+                                <div class="imagem" style="width: 60%; height: 300px; background-color: red;">
+
+                                </div>
+                        </div>
+
+                            
+                        <div class="InputFlex">
                             <input type="text"placeholder="ISBN-10:" id="isbn10" name="isbn10" required>
                             <input type="text"placeholder="ISBN-13:" id="isbn13" name="isbn13" required>
                         </div>

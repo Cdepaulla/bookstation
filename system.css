@@ -309,7 +309,7 @@ width: 100%;
     padding: 5px;
     background:rgb(252, 244, 237);
     border-radius: 12px;
-    width: 390px;
+    width: 50%;
     height: 48px;
     margin-top: 40px;
     margin-inline: 40px;
@@ -327,6 +327,9 @@ width: 100%;
     margin-inline: 40px;
     display: inline-block;
     vertical-align: middle; /* Alinha os inputs verticalmente */
+}
+.upload_imagem {
+    
 }
 /* .upload_imagem input{
     padding: 5px;
@@ -390,12 +393,12 @@ input{
     display: flex;
     margin-top: 55px; 
 }
-.Pessoa_fisica{
+.InputFlex{
     text-align: center;
     display:flex;
     justify-content: space-between;
 }
-.Pessoa_fisica  input{
+.InputFlex  input{
     padding: 20px;
     background:rgb(252, 244, 237);
     border-radius: 12px;
@@ -469,15 +472,17 @@ input{
 
 }
 .btn_emprestimos.multa{
-    border: #366171 2px solid;
-    color: #366171;
+    border: #5F1F17 2px solid;
+    color:#5F1F17;
+    
 
 }
 .btn_emprestimos.renovar{
-    border: #713636 2px solid;
-    color: #713636;
-}
-.btn_emprestimos.devolver{
     border: #366171 2px solid;
     color: #366171;
+    
+}
+.btn_emprestimos.devolver{
+    border: #50705F 2px solid;
+    color: #50705F;
 }
