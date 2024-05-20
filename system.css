@@ -297,7 +297,7 @@ width: 100%;
     width: 100%;
     height: 48px;
     margin-inline: auto;
-    padding: 20px;
+    padding: 10px;
     font-size: 16px;
     display: flex;
     margin-top: 55px;
@@ -317,19 +317,7 @@ width: 100%;
     margin-inline: 40px;
     display: inline-block;
     vertical-align: middle; /* Alinha os inputs verticalmente */
-
-.isbn_classe input{
-    padding: 5px;
-    background:rgb(252, 244, 237);
-    border-radius: 12px;
-    width: 390px;
-    height: 48px;
-    border: 1px solid #ccc;
-    margin-top: 40px;
-    margin-inline: 40px;
-    display: inline-block;
-    vertical-align: middle; /* Alinha os inputs verticalmente */
-}
+    
 .Button_finalizacao {
     justify-content: center;
     text-align: center;
@@ -381,6 +369,7 @@ input{
 
 }
 .InputFlex  input{
+    font-size: 16px;
     padding: 15px;
     background:rgb(252, 244, 237);
     border-radius: 12px;
@@ -413,6 +402,9 @@ input{
     border-radius: 10px;
     background: rgb(252, 244, 237);
 }
+.Email_form ::placeholder{
+    color: #766555;
+}
 .Email_form input{
     background: rgb(252, 244, 237);
     cursor: pointer;
@@ -428,19 +420,19 @@ input{
     margin-top: 20px;   
 }
 .InputFlex_tree ::placeholder{
-    color:#766555;
-}
-.Historico_emprestimos{ 
-        width:860px;
-        height:330px;
-        padding: 10px;
-        color: #766555;
-        border-radius: 20px;
-        margin-bottom: 20px;
-        background: rgb(252, 244, 237);
+    font-size: 16px;
+    color: #766555;
 }
 /*Abaixo são estilizações da pagina empréstimo*/
-
+.Historico_emprestimos p{ 
+    width:860px;
+    height:330px;
+    padding: 10px;
+    color: #766555;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background: rgb(252, 244, 237);
+}
  .desc.emprestimo{
    flex-direction: row;
    align-items: center;
@@ -475,6 +467,7 @@ input{
     color: #50705F;
 }
 .container_sinopse{
+    font-size: 16px;
     text-align: center;
     display:flex;
     justify-content: space-between;
@@ -483,7 +476,9 @@ input{
 .InputFlex_imagem img{
 width: 230px;
 height: 300px;
+background: #A1372A;
 border-radius: 10px;
+display: flex;
 }
 .sinopse_exemplar{
     width: 605px;
@@ -495,6 +490,40 @@ border-radius: 10px;
     background:rgb(252, 244, 237);
     border-radius: 10px;
 }
+ input[type = "file"]{
+    width:230px ;
+    height: 48px;
+    background: #A1372A;
+}
+.inputFile {
+    margin-top: 10px;
+    position: relative;
+    display: inline-block;
+}
 
+#arquivo {
+    position: absolute;
+    width: 230px;
+    height: 48px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-file-label {
+    font-size: 16px !important;
+    margin-top: 15px;
+    display: inline-block;
+    background-color: rgb(252, 244, 237);
+    color:#766555;
+    padding: 15px 65px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.custom-file-label:hover {
+    background-color: rgb(252, 244, 237);
+}
 
 
