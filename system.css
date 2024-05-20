@@ -282,7 +282,7 @@ width: 100%;
     margin-top: 55px;
 }
 .formulario_exemplar {
-    width: 750px;
+    width: 860px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -330,25 +330,30 @@ width: 100%;
     display: inline-block;
     vertical-align: middle; /* Alinha os inputs verticalmente */
 }
+.Button_finalizacao {
+    justify-content: center;
+    text-align: center;
+    display:flex;
+}
 .Button_finalizacao button{
-    padding: 5px;
     border-radius: 12px;
     width: 190px;
     height: 50px;
     border: 1px solid #ccc;
-    margin-top: 40px;
-    margin-inline: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-inline: 10px;
     display: inline-block;
     vertical-align: middle; /* Alinha os inputs verticalmente */
 }
 .Button_finalizacao button[type="submit"] {
     background-color: #DEA6A6; /* Cor de fundo do botão de envio */
-    color: #fff; /* Cor do texto do botão de envio */
+    color: #5A2B2B; /* Cor do texto do botão de envio */
 }
 
 .Button_finalizacao button[type="button"] {
     background-color: #B4CCBC; /* Cor de fundo do botão de cancelar */
-    color: #fff; /* Cor do texto do botão de cancelar */
+    color: #3E4841; /* Cor do texto do botão de cancelar */
 }
 
 input{
@@ -376,13 +381,33 @@ input{
 
 }
 .InputFlex  input{
-    padding: 20px;
+    padding: 15px;
     background:rgb(252, 244, 237);
     border-radius: 12px;
     width: 48%;
     display: inline-block;
     vertical-align: middle;
-    
+}
+.InputFlex ::placeholder {
+    color:#766555;
+  }
+.InputFlex_tree{
+    text-align: center;
+    display:flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 10px;
+}
+.InputFlex_tree input {
+    padding: 15px;
+    background:rgb(252, 244, 237);
+    border-radius: 12px;
+    width: 40%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.InputFlex_tree #numero{
+    width: 20%;
 }
 .InputFlex img{
     border-radius: 10px;
@@ -400,37 +425,20 @@ input{
     padding: 20px;
     font-size: 16px;
     display: flex;
-    margin-top: 35px;
+    margin-top: 20px;   
 }
-.endereco_informacoes{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.InputFlex_tree ::placeholder{
+    color:#766555;
 }
-
-.endereco_informacoes input {
-    padding: 20px;
-    background: rgb(252, 244, 237);
-    border-radius: 12px;
-    width: 25%;
-    margin-top: 40px;
-    display: inline-block;
+.Historico_emprestimos{ 
+        width:860px;
+        height:330px;
+        padding: 10px;
+        color: #766555;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        background: rgb(252, 244, 237);
 }
-  .endereco_informacoes_cidade{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-.endereco_informacoes_cidade input{
-    padding: 20px;
-    background:rgb(252, 244, 237);
-    border-radius: 12px;
-    width: 45%;
-    margin-top: 40px;
-    display: inline-block;
-    vertical-align: middle; /* Alinha os inputs verticalmente */
-}
-
 /*Abaixo são estilizações da pagina empréstimo*/
 
  .desc.emprestimo{
@@ -466,11 +474,27 @@ input{
     border: #50705F 2px solid;
     color: #50705F;
 }
+.container_sinopse{
+    text-align: center;
+    display:flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.InputFlex_imagem img{
+width: 230px;
+height: 300px;
+border-radius: 10px;
+}
 .sinopse_exemplar{
-    width: 65%;
-    height: 300px;
+    width: 605px;
+    height: 363px;
+    display: flex;
+    padding: 10px;
+    color:#766555;
+    flex-direction: row;
     background:rgb(252, 244, 237);
     border-radius: 10px;
 }
+
 
 
