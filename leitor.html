@@ -11,6 +11,7 @@
 
 <body>
     <div>
+        <div class="overlay">
         <div class="modal">
             <p>Deseja sair?</p>
             <span>
@@ -18,6 +19,7 @@
                 <button class="botaoResposta">Não</button>
             </span>
         </div>
+    </div>
         <header class="cabecalho">
             <button class="exit">
                 <a href="#"></a>
@@ -52,20 +54,14 @@
                             <input text id="cep" name="cep" placeholder="CEP" maxlength="9" required>
                             <input type="text" id="endereco" name="endereco" placeholder="Endereço" required>
                             <input type="text" id="numero" name="numero" placeholder="Nº" required>
-                      </div>
-                         <!-- <div class="upload_imagem">
-                            <form action="/upload" method="post" enctype="multipart/form-data">
-                            <input type="file" id="imagem" name="imagem"><br>
-                            <input type="submit" value="Enviar">
-                        </form>
-                    </div>  --> 
+                </div>
                         <div class="InputFlex">
                             <input type="text" id="bairro" name="bairro" placeholder="Bairro" required>
                             <input  type="text" id="cidade" name="cidade" placeholder="Cidade" required>
                         </div>
                     <div class="Button_finalizacao">
-                        <button type="submit">Cancelar</button>
-                        <button type="button" onclick="cancelar()">Cadastrar</button>
+                        <button type="button">Cancelar</button>
+                        <button type="submit" onclick="cancelar()">Cadastrar</button>
                     </div>
                     <div class="Historico_emprestimos">
                         <p>Histórico de Empréstimos:</p>

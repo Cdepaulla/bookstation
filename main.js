@@ -2,6 +2,7 @@ const exit = document.querySelector(".exit")
 const elModal = document.querySelector(".modal")
 const btnSim = document.querySelectorAll(".botaoResposta")[0]
 const btnNao = document.querySelectorAll(".botaoResposta")[1]
+const overlay = document.querySelector(".overlay")
 const botaoAbrir = document.querySelector(".botao_abrir")
 const botaoparagrafo = document.querySelector(".desc")
 const abrirbotoes = document.querySelector(".desc_botao")
@@ -21,10 +22,12 @@ exit.addEventListener("click", sairdapagina)
 function sairdapagina() {
     if (esconder) {
         esconder = false
+        overlay.style.display = 'none'
         elModal.style.display = 'none'
     } else {
         esconder = true
         elModal.style.display = 'flex'
+        overlay.style.display = 'flex'
     }
 }
 
@@ -50,6 +53,7 @@ function abrirdesc() {
     if (esconderdescricao) {
         esconderdescricao = false
         botaoparagrafo.style.display = 'none'
+
         botaoAbrir.style.background = 'url(/assets/fechado.png)'
         botaoparagrafo.style.transition = '2s'
         // botaoAbrir.style.backgroundRepeat = 'no-repeat'
